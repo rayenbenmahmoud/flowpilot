@@ -1,0 +1,13 @@
+Django~=6.1.2
+djangorestframework~=3.18.3
+django-filter~=26.2
+django-cors-headers~=4.9.0
+drf-spectacular~=0.30.0
+drf-spectacular-sidecar~=2026.10
+celery~=5.6.3
+redis~=8.1.0
+psycopg[binary]~=3.3.6
+requests~=2.34.2
+gunicorn~=26.2.0
+whitenoise~=6.12
+python-dotenv~=1.2

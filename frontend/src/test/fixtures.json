@@ -1,0 +1,1844 @@
+{
+ "/config/": {
+  "app": "FlowPilot",
+  "version": "1.0.0",
+  "demo_mode": true
+ },
+ "/dashboard/": {
+  "workflows": {
+   "total": 6,
+   "active": 6,
+   "disabled": 0,
+   "archived": 1
+  },
+  "executions": {
+   "total": 74,
+   "success": 63,
+   "failed": 3,
+   "skipped": 8,
+   "in_progress": 0
+  },
+  "last_24h": {
+   "success": 14,
+   "failed": 1
+  },
+  "success_rate": 95.5,
+  "needs_attention": 1,
+  "daily": [
+   {
+    "date": "2026-10-22",
+    "success": 10,
+    "failed": 1,
+    "other": 0
+   },
+   {
+    "date": "2026-10-23",
+    "success": 13,
+    "failed": 0,
+    "other": 0
+   },
+   {
+    "date": "2026-10-24",
+    "success": 6,
+    "failed": 0,
+    "other": 2
+   },
+   {
+    "date": "2026-10-25",
+    "success": 6,
+    "failed": 1,
+    "other": 2
+   },
+   {
+    "date": "2026-10-26",
+    "success": 7,
+    "failed": 0,
+    "other": 0
+   },
+   {
+    "date": "2026-10-27",
+    "success": 14,
+    "failed": 1,
+    "other": 1
+   },
+   {
+    "date": "2026-10-28",
+    "success": 0,
+    "failed": 0,
+    "other": 0
+   }
+  ],
+  "recent": [
+   {
+    "id": "c87d4052-cbf3-44ab-8094-039d2c6ecb80",
+    "workflow": "2064eafc-a497-4fdb-a6dd-cc6959e9e239",
+    "workflow_name": "Low inventory alert",
+    "event_type": "inventory.updated",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "SKU-9821: 9 in stock (reorder at 10)",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T22:49:21.780170Z",
+    "started_at": "2026-10-27T22:49:21.780170Z",
+    "finished_at": "2026-10-27T22:49:21.891170Z",
+    "duration_ms": 111
+   },
+   {
+    "id": "a8ae83ce-04ef-4362-940e-ff83021c3824",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4164, total 174.36 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T19:12:37.187237Z",
+    "started_at": "2026-10-27T19:12:37.187237Z",
+    "finished_at": "2026-10-27T19:12:37.449237Z",
+    "duration_ms": 262
+   },
+   {
+    "id": "16f0b749-f55d-4fcd-8450-7ed62e53406d",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-5506, total 126.56 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T18:59:20.380900Z",
+    "started_at": "2026-10-27T18:59:20.380900Z",
+    "finished_at": "2026-10-27T18:59:20.709900Z",
+    "duration_ms": 329
+   },
+   {
+    "id": "c0c2e52f-81b5-44d7-9442-2b1199c0b9e7",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4257, total 125.3 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T18:44:17.697973Z",
+    "started_at": "2026-10-27T18:44:17.697973Z",
+    "finished_at": "2026-10-27T18:44:19.023973Z",
+    "duration_ms": 1326
+   },
+   {
+    "id": "b833fa54-395a-4daa-bb9b-1172aa82040c",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-6974, total 434.01 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T16:13:26.754852Z",
+    "started_at": "2026-10-27T16:13:26.754852Z",
+    "finished_at": "2026-10-27T16:13:27.304852Z",
+    "duration_ms": 550
+   },
+   {
+    "id": "f6337df4-6acc-4265-86a4-b31f631be954",
+    "workflow": "c32c6d7f-dd7d-4fb2-b345-d97eab133368",
+    "workflow_name": "Welcome email for new customers",
+    "event_type": "customer.registered",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Sofia Marini <sofia.2796@example.com> (cus_2796)",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T15:21:17.390640Z",
+    "started_at": "2026-10-27T15:21:17.390640Z",
+    "finished_at": "2026-10-27T15:21:18.241640Z",
+    "duration_ms": 851
+   },
+   {
+    "id": "7fa5b476-bc79-44e6-a6a0-f1470b066d70",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-8811, total 50.88 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T14:51:26.505385Z",
+    "started_at": "2026-10-27T14:51:26.505385Z",
+    "finished_at": "2026-10-27T14:51:27.665385Z",
+    "duration_ms": 1160
+   },
+   {
+    "id": "3e819209-65e0-4f00-a007-d2c011fd0ca8",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-5082, total 232.69 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T14:50:41.497209Z",
+    "started_at": "2026-10-27T14:50:41.497209Z",
+    "finished_at": "2026-10-27T14:50:42.568209Z",
+    "duration_ms": 1071
+   }
+  ]
+ },
+ "/workflows/": {
+  "count": 7,
+  "next": null,
+  "previous": null,
+  "results": [
+   {
+    "id": "e68df41b-56a1-4faa-8ede-3f7e8397fa76",
+    "name": "Error notification for failed workflows",
+    "description": "Whenever any workflow fails, notify the team with the error and execution ID.",
+    "template_key": "failure-notification",
+    "trigger_event": "workflow.failed",
+    "match_mode": "all",
+    "conditions": [],
+    "actions": [
+     {
+      "type": "notify_internal",
+      "config": {
+       "title": "Workflow failed: {{ payload.workflow_name }}",
+       "body": "{{ payload.error_message | default:No details were recorded. }} (code {{ payload.error_code | default:unknown }}, attempt {{ payload.attempt | default:1 }}). Execution {{ payload.execution_id }}.",
+       "severity": "error"
+      }
+     }
+    ],
+    "status": "active",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.741922Z",
+    "updated_at": "2026-10-28T00:18:02.741943Z",
+    "archived_at": null,
+    "runs_total": 0,
+    "runs_success": 0,
+    "runs_failed": 0,
+    "last_run_at": null,
+    "last_status": null
+   },
+   {
+    "id": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "name": "Hand orders to n8n for fulfilment",
+    "description": "Send each order to an n8n workflow (for example: create a pick list, post to Slack).",
+    "template_key": "order-n8n-handoff",
+    "trigger_event": "order.created",
+    "match_mode": "all",
+    "conditions": [],
+    "actions": [
+     {
+      "type": "trigger_n8n",
+      "config": {
+       "path": "flowpilot-order",
+       "body": "{{ payload }}"
+      }
+     }
+    ],
+    "status": "active",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.734992Z",
+    "updated_at": "2026-10-28T00:18:02.735018Z",
+    "archived_at": null,
+    "runs_total": 17,
+    "runs_success": 15,
+    "runs_failed": 2,
+    "last_run_at": "2026-10-27T18:59:20.380900Z",
+    "last_status": "success"
+   },
+   {
+    "id": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "name": "Internal notification for new orders",
+    "description": "Tell the team whenever an order comes in.",
+    "template_key": "order-notification",
+    "trigger_event": "order.created",
+    "match_mode": "all",
+    "conditions": [],
+    "actions": [
+     {
+      "type": "notify_internal",
+      "config": {
+       "title": "New order {{ payload.order_id }}",
+       "body": "Order total: {{ payload.total }} {{ payload.currency | default:EUR }}",
+       "severity": "info"
+      }
+     }
+    ],
+    "status": "active",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.732337Z",
+    "updated_at": "2026-10-28T00:18:02.732365Z",
+    "archived_at": null,
+    "runs_total": 22,
+    "runs_success": 22,
+    "runs_failed": 0,
+    "last_run_at": "2026-10-27T19:12:37.187237Z",
+    "last_status": "success"
+   },
+   {
+    "id": "d16b59e0-f00c-461c-a9eb-0beef09cdf49",
+    "name": "Legacy order export (replaced by n8n hand-off)",
+    "description": "Archived example. Kept for history, no longer runs.",
+    "template_key": "",
+    "trigger_event": "order.created",
+    "match_mode": "all",
+    "conditions": [],
+    "actions": [
+     {
+      "type": "call_external_api",
+      "config": {
+       "path": "v1/orders",
+       "body": "{{ payload }}"
+      }
+     }
+    ],
+    "status": "archived",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.744269Z",
+    "updated_at": "2026-10-28T00:18:02.744288Z",
+    "archived_at": "2026-10-08T00:18:02.743417Z",
+    "runs_total": 0,
+    "runs_success": 0,
+    "runs_failed": 0,
+    "last_run_at": null,
+    "last_status": null
+   },
+   {
+    "id": "2064eafc-a497-4fdb-a6dd-cc6959e9e239",
+    "name": "Low inventory alert",
+    "description": "Raise an alert when stock falls to or below the reorder level.",
+    "template_key": "low-inventory-alert",
+    "trigger_event": "inventory.updated",
+    "match_mode": "all",
+    "conditions": [
+     {
+      "field": "quantity",
+      "operator": "lte",
+      "value": "{{ payload.reorder_level }}"
+     }
+    ],
+    "actions": [
+     {
+      "type": "create_alert",
+      "config": {
+       "title": "Low stock: {{ payload.sku }}",
+       "body": "{{ payload.product_name | default:This product }} has {{ payload.quantity }} left (reorder level {{ payload.reorder_level }}).",
+       "severity": "warning"
+      }
+     }
+    ],
+    "status": "active",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.737340Z",
+    "updated_at": "2026-10-28T00:18:02.737365Z",
+    "archived_at": null,
+    "runs_total": 13,
+    "runs_success": 5,
+    "runs_failed": 0,
+    "last_run_at": "2026-10-27T22:49:21.780170Z",
+    "last_status": "success"
+   },
+   {
+    "id": "ae53dfe5-79fa-43db-9b38-09b8b32ffd83",
+    "name": "Support ticket routing",
+    "description": "Assign new tickets by priority and category. The first matching rule wins.",
+    "template_key": "support-routing",
+    "trigger_event": "support.request.created",
+    "match_mode": "all",
+    "conditions": [],
+    "actions": [
+     {
+      "type": "assign_ticket",
+      "config": {
+       "rules": [
+        {
+         "name": "Urgent tickets go to escalations",
+         "when": [
+          {
+           "field": "priority",
+           "operator": "eq",
+           "value": "urgent"
+          }
+         ],
+         "assignee": "oncall-escalations",
+         "team": "Escalations"
+        },
+        {
+         "name": "Billing questions go to finance support",
+         "when": [
+          {
+           "field": "category",
+           "operator": "eq",
+           "value": "billing"
+          }
+         ],
+         "assignee": "billing-desk",
+         "team": "Billing"
+        }
+       ],
+       "default_assignee": "support-queue",
+       "default_team": "General support"
+      }
+     }
+    ],
+    "status": "active",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.739653Z",
+    "updated_at": "2026-10-28T00:18:02.739676Z",
+    "archived_at": null,
+    "runs_total": 12,
+    "runs_success": 12,
+    "runs_failed": 0,
+    "last_run_at": "2026-10-27T09:01:09.607199Z",
+    "last_status": "success"
+   },
+   {
+    "id": "c32c6d7f-dd7d-4fb2-b345-d97eab133368",
+    "name": "Welcome email for new customers",
+    "description": "When a customer registers, send them a welcome email.",
+    "template_key": "welcome-email",
+    "trigger_event": "customer.registered",
+    "match_mode": "all",
+    "conditions": [],
+    "actions": [
+     {
+      "type": "send_email",
+      "config": {
+       "to": "{{ payload.email }}",
+       "subject": "Welcome to Northwind, {{ payload.name }}!",
+       "body": "Hi {{ payload.name }},\n\nYour account ({{ payload.customer_id }}) is ready. Reply to this email if you need a hand getting started.\n\nThe Northwind team"
+      }
+     }
+    ],
+    "status": "active",
+    "version": 1,
+    "created_at": "2026-10-28T00:18:02.730079Z",
+    "updated_at": "2026-10-28T00:18:02.730118Z",
+    "archived_at": null,
+    "runs_total": 10,
+    "runs_success": 9,
+    "runs_failed": 1,
+    "last_run_at": "2026-10-27T15:21:17.390640Z",
+    "last_status": "success"
+   }
+  ]
+ },
+ "/meta/": {
+  "events": [
+   {
+    "key": "customer.registered",
+    "label": "Customer registered",
+    "description": "A new customer created an account.",
+    "reserved": false,
+    "fields": [
+     {
+      "name": "customer_id",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "email",
+      "type": "email",
+      "required": true
+     },
+     {
+      "name": "name",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "plan",
+      "type": "string",
+      "required": false
+     }
+    ],
+    "sample": {
+     "customer_id": "cus_1042",
+     "email": "amira.haddad@example.com",
+     "name": "Amira Haddad",
+     "plan": "starter"
+    }
+   },
+   {
+    "key": "order.created",
+    "label": "Order created",
+    "description": "A customer placed an order.",
+    "reserved": false,
+    "fields": [
+     {
+      "name": "order_id",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "total",
+      "type": "number",
+      "required": true,
+      "min": 0
+     },
+     {
+      "name": "currency",
+      "type": "string",
+      "required": false
+     },
+     {
+      "name": "customer_email",
+      "type": "email",
+      "required": false
+     }
+    ],
+    "sample": {
+     "order_id": "ORD-7781",
+     "total": 189.5,
+     "currency": "EUR",
+     "customer_email": "amira.haddad@example.com"
+    }
+   },
+   {
+    "key": "inventory.updated",
+    "label": "Inventory updated",
+    "description": "Stock level of a product changed.",
+    "reserved": false,
+    "fields": [
+     {
+      "name": "sku",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "quantity",
+      "type": "integer",
+      "required": true,
+      "min": 0
+     },
+     {
+      "name": "reorder_level",
+      "type": "integer",
+      "required": true,
+      "min": 0
+     },
+     {
+      "name": "product_name",
+      "type": "string",
+      "required": false
+     }
+    ],
+    "sample": {
+     "sku": "SKU-2210",
+     "product_name": "Ceramic pour-over set",
+     "quantity": 4,
+     "reorder_level": 10
+    }
+   },
+   {
+    "key": "support.request.created",
+    "label": "Support request created",
+    "description": "A customer opened a support ticket.",
+    "reserved": false,
+    "fields": [
+     {
+      "name": "ticket_id",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "subject",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "priority",
+      "type": "string",
+      "required": true,
+      "choices": [
+       "low",
+       "normal",
+       "high",
+       "urgent"
+      ]
+     },
+     {
+      "name": "category",
+      "type": "string",
+      "required": false
+     },
+     {
+      "name": "customer_email",
+      "type": "email",
+      "required": false
+     }
+    ],
+    "sample": {
+     "ticket_id": "TCK-3301",
+     "subject": "Charged twice for one order",
+     "priority": "high",
+     "category": "billing"
+    }
+   },
+   {
+    "key": "workflow.failed",
+    "label": "Workflow failed (system)",
+    "description": "Emitted by FlowPilot itself whenever a workflow execution fails.",
+    "reserved": true,
+    "fields": [
+     {
+      "name": "execution_id",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "workflow_name",
+      "type": "string",
+      "required": true
+     },
+     {
+      "name": "error_code",
+      "type": "string",
+      "required": false
+     },
+     {
+      "name": "error_message",
+      "type": "string",
+      "required": false
+     }
+    ],
+    "sample": {
+     "execution_id": "00000000-0000-0000-0000-000000000000",
+     "workflow_name": "Example",
+     "error_code": "timeout",
+     "error_message": "No response within 5s"
+    }
+   }
+  ],
+  "operators": [
+   {
+    "key": "eq",
+    "label": "equals"
+   },
+   {
+    "key": "neq",
+    "label": "does not equal"
+   },
+   {
+    "key": "gt",
+    "label": "is greater than"
+   },
+   {
+    "key": "gte",
+    "label": "is at least"
+   },
+   {
+    "key": "lt",
+    "label": "is less than"
+   },
+   {
+    "key": "lte",
+    "label": "is at most"
+   },
+   {
+    "key": "contains",
+    "label": "contains"
+   },
+   {
+    "key": "not_contains",
+    "label": "does not contain"
+   },
+   {
+    "key": "in",
+    "label": "is one of"
+   },
+   {
+    "key": "not_in",
+    "label": "is not one of"
+   },
+   {
+    "key": "exists",
+    "label": "is present"
+   },
+   {
+    "key": "not_exists",
+    "label": "is missing"
+   }
+  ],
+  "actions": [
+   {
+    "type": "send_email",
+    "label": "Send email",
+    "description": "Send an email through the email adapter.",
+    "required": [
+     "to",
+     "subject",
+     "body"
+    ],
+    "example": {
+     "to": "{{ payload.email }}",
+     "subject": "Welcome, {{ payload.name }}",
+     "body": "Hi {{ payload.name }}, thanks for signing up."
+    }
+   },
+   {
+    "type": "notify_internal",
+    "label": "Notify the team",
+    "description": "Create an internal notification.",
+    "required": [
+     "title"
+    ],
+    "example": {
+     "title": "New order {{ payload.order_id }}",
+     "body": "Total: {{ payload.total }}",
+     "severity": "info"
+    }
+   },
+   {
+    "type": "create_alert",
+    "label": "Create alert",
+    "description": "Raise an alert that needs attention.",
+    "required": [
+     "title"
+    ],
+    "example": {
+     "title": "Low stock: {{ payload.sku }}",
+     "body": "Only {{ payload.quantity }} left.",
+     "severity": "warning"
+    }
+   },
+   {
+    "type": "assign_ticket",
+    "label": "Assign ticket",
+    "description": "Route a support ticket using ordered rules; the first match wins.",
+    "required": [
+     "rules"
+    ],
+    "example": {
+     "rules": [
+      {
+       "name": "Urgent tickets",
+       "when": [
+        {
+         "field": "priority",
+         "operator": "eq",
+         "value": "urgent"
+        }
+       ],
+       "assignee": "oncall-escalations",
+       "team": "Escalations"
+      }
+     ],
+     "default_assignee": "support-queue",
+     "default_team": "Support"
+    }
+   },
+   {
+    "type": "trigger_n8n",
+    "label": "Trigger n8n workflow",
+    "description": "POST the event to an n8n production webhook.",
+    "required": [
+     "path"
+    ],
+    "example": {
+     "path": "flowpilot-order",
+     "body": "{{ payload }}"
+    }
+   },
+   {
+    "type": "call_external_api",
+    "label": "Call external API",
+    "description": "POST JSON to a configured partner API.",
+    "required": [
+     "path"
+    ],
+    "example": {
+     "path": "v1/orders",
+     "body": "{{ payload }}"
+    }
+   }
+  ],
+  "templates": [
+   {
+    "key": "welcome-email",
+    "name": "Welcome email for new customers",
+    "description": "When a customer registers, send them a welcome email.",
+    "trigger_event": "customer.registered"
+   },
+   {
+    "key": "order-notification",
+    "name": "Internal notification for new orders",
+    "description": "Tell the team whenever an order comes in.",
+    "trigger_event": "order.created"
+   },
+   {
+    "key": "order-n8n-handoff",
+    "name": "Hand orders to n8n for fulfilment",
+    "description": "Send each order to an n8n workflow (for example: create a pick list, post to Slack).",
+    "trigger_event": "order.created"
+   },
+   {
+    "key": "low-inventory-alert",
+    "name": "Low inventory alert",
+    "description": "Raise an alert when stock falls to or below the reorder level.",
+    "trigger_event": "inventory.updated"
+   },
+   {
+    "key": "support-routing",
+    "name": "Support ticket routing",
+    "description": "Assign new tickets by priority and category. The first matching rule wins.",
+    "trigger_event": "support.request.created"
+   },
+   {
+    "key": "failure-notification",
+    "name": "Error notification for failed workflows",
+    "description": "Whenever any workflow fails, notify the team with the error and execution ID.",
+    "trigger_event": "workflow.failed"
+   }
+  ]
+ },
+ "/executions/": {
+  "count": 74,
+  "next": "http://localhost:8000/api/v1/executions/?page=2",
+  "previous": null,
+  "results": [
+   {
+    "id": "c87d4052-cbf3-44ab-8094-039d2c6ecb80",
+    "workflow": "2064eafc-a497-4fdb-a6dd-cc6959e9e239",
+    "workflow_name": "Low inventory alert",
+    "event_type": "inventory.updated",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "SKU-9821: 9 in stock (reorder at 10)",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T22:49:21.780170Z",
+    "started_at": "2026-10-27T22:49:21.780170Z",
+    "finished_at": "2026-10-27T22:49:21.891170Z",
+    "duration_ms": 111
+   },
+   {
+    "id": "a8ae83ce-04ef-4362-940e-ff83021c3824",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4164, total 174.36 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T19:12:37.187237Z",
+    "started_at": "2026-10-27T19:12:37.187237Z",
+    "finished_at": "2026-10-27T19:12:37.449237Z",
+    "duration_ms": 262
+   },
+   {
+    "id": "16f0b749-f55d-4fcd-8450-7ed62e53406d",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-5506, total 126.56 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T18:59:20.380900Z",
+    "started_at": "2026-10-27T18:59:20.380900Z",
+    "finished_at": "2026-10-27T18:59:20.709900Z",
+    "duration_ms": 329
+   },
+   {
+    "id": "c0c2e52f-81b5-44d7-9442-2b1199c0b9e7",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4257, total 125.3 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T18:44:17.697973Z",
+    "started_at": "2026-10-27T18:44:17.697973Z",
+    "finished_at": "2026-10-27T18:44:19.023973Z",
+    "duration_ms": 1326
+   },
+   {
+    "id": "b833fa54-395a-4daa-bb9b-1172aa82040c",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-6974, total 434.01 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T16:13:26.754852Z",
+    "started_at": "2026-10-27T16:13:26.754852Z",
+    "finished_at": "2026-10-27T16:13:27.304852Z",
+    "duration_ms": 550
+   },
+   {
+    "id": "f6337df4-6acc-4265-86a4-b31f631be954",
+    "workflow": "c32c6d7f-dd7d-4fb2-b345-d97eab133368",
+    "workflow_name": "Welcome email for new customers",
+    "event_type": "customer.registered",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Sofia Marini <sofia.2796@example.com> (cus_2796)",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T15:21:17.390640Z",
+    "started_at": "2026-10-27T15:21:17.390640Z",
+    "finished_at": "2026-10-27T15:21:18.241640Z",
+    "duration_ms": 851
+   },
+   {
+    "id": "7fa5b476-bc79-44e6-a6a0-f1470b066d70",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-8811, total 50.88 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T14:51:26.505385Z",
+    "started_at": "2026-10-27T14:51:26.505385Z",
+    "finished_at": "2026-10-27T14:51:27.665385Z",
+    "duration_ms": 1160
+   },
+   {
+    "id": "3e819209-65e0-4f00-a007-d2c011fd0ca8",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-5082, total 232.69 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T14:50:41.497209Z",
+    "started_at": "2026-10-27T14:50:41.497209Z",
+    "finished_at": "2026-10-27T14:50:42.568209Z",
+    "duration_ms": 1071
+   },
+   {
+    "id": "d949cbd4-9483-49f7-9852-4b84b674718e",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-6155, total 323.22 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T12:13:09.682163Z",
+    "started_at": "2026-10-27T12:13:09.682163Z",
+    "finished_at": "2026-10-27T12:13:10.612163Z",
+    "duration_ms": 930
+   },
+   {
+    "id": "4da75c9d-0980-4538-a26e-36ad3043b5f1",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4814, total 197.96 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T09:58:58.662649Z",
+    "started_at": "2026-10-27T09:58:58.662649Z",
+    "finished_at": "2026-10-27T09:58:59.710649Z",
+    "duration_ms": 1048
+   },
+   {
+    "id": "11af8369-4858-46e0-a683-f71522c94fa7",
+    "workflow": "ae53dfe5-79fa-43db-9b38-09b8b32ffd83",
+    "workflow_name": "Support ticket routing",
+    "event_type": "support.request.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "TCK-8962 [low] Invoice copy request",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T09:01:09.607199Z",
+    "started_at": "2026-10-27T09:01:09.607199Z",
+    "finished_at": "2026-10-27T09:01:10.431199Z",
+    "duration_ms": 824
+   },
+   {
+    "id": "57bfeba2-6e9f-4d88-a036-41292f6bf923",
+    "workflow": "ae53dfe5-79fa-43db-9b38-09b8b32ffd83",
+    "workflow_name": "Support ticket routing",
+    "event_type": "support.request.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "TCK-7912 [normal] Cannot reset my password",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T08:48:28.867568Z",
+    "started_at": "2026-10-27T08:48:28.867568Z",
+    "finished_at": "2026-10-27T08:48:29.002568Z",
+    "duration_ms": 135
+   },
+   {
+    "id": "239038d3-ba01-4e13-ba24-25d96bc44b9d",
+    "workflow": "2064eafc-a497-4fdb-a6dd-cc6959e9e239",
+    "workflow_name": "Low inventory alert",
+    "event_type": "inventory.updated",
+    "status": "skipped",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "SKU-9856: 52 in stock (reorder at 10)",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T07:00:16.444572Z",
+    "started_at": "2026-10-27T07:00:16.444572Z",
+    "finished_at": "2026-10-27T07:00:16.726572Z",
+    "duration_ms": 282
+   },
+   {
+    "id": "47e287df-7ef6-4746-bd1e-b29f73f220dd",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-3442, total 404.74 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T04:42:31.308783Z",
+    "started_at": "2026-10-27T04:42:31.308783Z",
+    "finished_at": "2026-10-27T04:42:32.620783Z",
+    "duration_ms": 1312
+   },
+   {
+    "id": "92d34ce8-f1cd-4a42-add1-05bd48482448",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-5291, total 362.26 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-27T01:35:38.438281Z",
+    "started_at": "2026-10-27T01:35:38.438281Z",
+    "finished_at": "2026-10-27T01:35:39.687281Z",
+    "duration_ms": 1249
+   },
+   {
+    "id": "e265769e-6911-417c-ba29-51c9a72f1c2a",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "failed",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4788, total 340.75 EUR",
+    "error_code": "connection_error",
+    "error_message": "Could not connect to the service. Is it running and reachable?",
+    "retryable": true,
+    "created_at": "2026-10-27T00:21:07.441703Z",
+    "started_at": "2026-10-27T00:21:07.441703Z",
+    "finished_at": "2026-10-27T00:21:12.649703Z",
+    "duration_ms": 5208
+   },
+   {
+    "id": "e7d8c52c-b99d-4b09-a8c4-29702e6a4c83",
+    "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+    "workflow_name": "Hand orders to n8n for fulfilment",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-3287, total 363.97 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-26T23:36:45.624184Z",
+    "started_at": "2026-10-26T23:36:45.624184Z",
+    "finished_at": "2026-10-26T23:36:46.847184Z",
+    "duration_ms": 1223
+   },
+   {
+    "id": "859c8c0d-6291-485d-b7c7-5788a158ddee",
+    "workflow": "c32c6d7f-dd7d-4fb2-b345-d97eab133368",
+    "workflow_name": "Welcome email for new customers",
+    "event_type": "customer.registered",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Daniel Okafor <daniel.8579@example.com> (cus_8579)",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-26T16:56:07.187171Z",
+    "started_at": "2026-10-26T16:56:07.187171Z",
+    "finished_at": "2026-10-26T16:56:07.680171Z",
+    "duration_ms": 493
+   },
+   {
+    "id": "8caf24b2-faf0-426b-8579-d9c08f829fbc",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-4566, total 288.53 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-26T15:52:53.592507Z",
+    "started_at": "2026-10-26T15:52:53.592507Z",
+    "finished_at": "2026-10-26T15:52:54.822507Z",
+    "duration_ms": 1230
+   },
+   {
+    "id": "1a862f0d-99a5-47f6-ba0b-c015114f3184",
+    "workflow": "dfbf41f6-2e4b-41e3-af33-a23f2e807fbe",
+    "workflow_name": "Internal notification for new orders",
+    "event_type": "order.created",
+    "status": "success",
+    "source": "webhook",
+    "attempt": 1,
+    "input_summary": "Order ORD-7570, total 99.91 EUR",
+    "error_code": "",
+    "error_message": "",
+    "retryable": false,
+    "created_at": "2026-10-26T11:57:38.544713Z",
+    "started_at": "2026-10-26T11:57:38.544713Z",
+    "finished_at": "2026-10-26T11:57:38.668713Z",
+    "duration_ms": 124
+   }
+  ]
+ },
+ "/integrations/": [
+  {
+   "key": "email",
+   "label": "Email (SMTP)",
+   "description": "Sends transactional email such as welcome messages.",
+   "enabled": true,
+   "mode": "demo",
+   "state": "simulated",
+   "state_label": "Simulated (demo mode)",
+   "missing_env": [
+    "EMAIL_HOST"
+   ],
+   "secrets": [
+    {
+     "name": "EMAIL_HOST_PASSWORD",
+     "is_set": false
+    }
+   ],
+   "settings": {
+    "from_address": "FlowPilot <no-reply@example.com>",
+    "timeout_seconds": 10
+   },
+   "settings_schema": [
+    {
+     "name": "from_address",
+     "label": "From address",
+     "kind": "email",
+     "minimum": 0,
+     "maximum": 0,
+     "help": "Sender shown to recipients."
+    },
+    {
+     "name": "timeout_seconds",
+     "label": "Timeout (seconds)",
+     "kind": "int",
+     "minimum": 1,
+     "maximum": 30,
+     "help": ""
+    }
+   ],
+   "last_test": {
+    "at": null,
+    "ok": null,
+    "mode": "",
+    "message": ""
+   }
+  },
+  {
+   "key": "n8n",
+   "label": "n8n webhooks",
+   "description": "Triggers n8n workflows (CRM sync, Slack posts, spreadsheets) with the event data.",
+   "enabled": true,
+   "mode": "demo",
+   "state": "simulated",
+   "state_label": "Simulated (demo mode)",
+   "missing_env": [
+    "FLOWPILOT_N8N_BASE_URL",
+    "FLOWPILOT_N8N_WEBHOOK_SECRET"
+   ],
+   "secrets": [
+    {
+     "name": "FLOWPILOT_N8N_WEBHOOK_SECRET",
+     "is_set": false
+    }
+   ],
+   "settings": {
+    "timeout_seconds": 5
+   },
+   "settings_schema": [
+    {
+     "name": "timeout_seconds",
+     "label": "Timeout (seconds)",
+     "kind": "int",
+     "minimum": 1,
+     "maximum": 30,
+     "help": ""
+    }
+   ],
+   "last_test": {
+    "at": null,
+    "ok": null,
+    "mode": "",
+    "message": ""
+   }
+  },
+  {
+   "key": "http",
+   "label": "External REST API",
+   "description": "Calls a partner API with a JSON body and a bearer token.",
+   "enabled": true,
+   "mode": "demo",
+   "state": "simulated",
+   "state_label": "Simulated (demo mode)",
+   "missing_env": [
+    "FLOWPILOT_EXTERNAL_API_BASE_URL",
+    "FLOWPILOT_EXTERNAL_API_KEY"
+   ],
+   "secrets": [
+    {
+     "name": "FLOWPILOT_EXTERNAL_API_KEY",
+     "is_set": false
+    }
+   ],
+   "settings": {
+    "timeout_seconds": 5
+   },
+   "settings_schema": [
+    {
+     "name": "timeout_seconds",
+     "label": "Timeout (seconds)",
+     "kind": "int",
+     "minimum": 1,
+     "maximum": 30,
+     "help": ""
+    }
+   ],
+   "last_test": {
+    "at": null,
+    "ok": null,
+    "mode": "",
+    "message": ""
+   }
+  }
+ ],
+ "/outbox/": {
+  "count": 9,
+  "next": null,
+  "previous": null,
+  "results": [
+   {
+    "id": 11,
+    "to_address": "sofia.2796@example.com",
+    "subject": "Welcome to Northwind, Sofia Marini!",
+    "body": "Hi Sofia Marini, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-b44e765341",
+    "execution": "f6337df4-6acc-4265-86a4-b31f631be954",
+    "created_at": "2026-10-27T15:21:17.690640Z"
+   },
+   {
+    "id": 16,
+    "to_address": "daniel.8579@example.com",
+    "subject": "Welcome to Northwind, Daniel Okafor!",
+    "body": "Hi Daniel Okafor, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-80eaa131a5",
+    "execution": "859c8c0d-6291-485d-b7c7-5788a158ddee",
+    "created_at": "2026-10-26T16:56:07.487171Z"
+   },
+   {
+    "id": 14,
+    "to_address": "nadia.7939@example.com",
+    "subject": "Welcome to Northwind, Nadia Karim!",
+    "body": "Hi Nadia Karim, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-b2c44022bf",
+    "execution": "47ed930e-cb56-4ec3-8333-1fec723c9ab7",
+    "created_at": "2026-10-25T01:14:09.714476Z"
+   },
+   {
+    "id": 13,
+    "to_address": "mei.4295@example.com",
+    "subject": "Welcome to Northwind, Mei Tanaka!",
+    "body": "Hi Mei Tanaka, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-2d20967e2c",
+    "execution": "f2eb2a90-d691-4147-838c-b4eb24bdd474",
+    "created_at": "2026-10-24T06:26:26.049088Z"
+   },
+   {
+    "id": 17,
+    "to_address": "nadia.4853@example.com",
+    "subject": "Welcome to Northwind, Nadia Karim!",
+    "body": "Hi Nadia Karim, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-b11a0ba4b0",
+    "execution": "738ed9f7-465e-4c32-bed5-365bbb5b7ce0",
+    "created_at": "2026-10-23T21:16:37.468870Z"
+   },
+   {
+    "id": 15,
+    "to_address": "daniel.2790@example.com",
+    "subject": "Welcome to Northwind, Daniel Okafor!",
+    "body": "Hi Daniel Okafor, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-5e17e12c3f",
+    "execution": "e7662d93-fdd6-4f65-a9f7-4d6df61d25a3",
+    "created_at": "2026-10-22T23:22:57.116088Z"
+   },
+   {
+    "id": 10,
+    "to_address": "oliver.3677@example.com",
+    "subject": "Welcome to Northwind, Oliver Stein!",
+    "body": "Hi Oliver Stein, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-2fd25d2591",
+    "execution": "31ba6865-d357-4a0a-93b7-402101ca1917",
+    "created_at": "2026-10-22T23:13:56.642172Z"
+   },
+   {
+    "id": 12,
+    "to_address": "lucas.5371@example.com",
+    "subject": "Welcome to Northwind, Lucas Moreau!",
+    "body": "Hi Lucas Moreau, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-e421318841",
+    "execution": "809599ee-933a-450c-a0ee-6f9eed9f9b27",
+    "created_at": "2026-10-21T21:38:29.849947Z"
+   },
+   {
+    "id": 18,
+    "to_address": "oliver.2193@example.com",
+    "subject": "Welcome to Northwind, Oliver Stein!",
+    "body": "Hi Oliver Stein, your account is ready.",
+    "mode": "demo",
+    "status": "sent",
+    "provider_message_id": "demo-58a242d780",
+    "execution": "e2ad6725-208a-4f7b-99f5-ddb306c10ebe",
+    "created_at": "2026-10-21T05:20:30.350548Z"
+   }
+  ]
+ },
+ "/notifications/": {
+  "count": 30,
+  "next": "http://localhost:8000/api/v1/notifications/?page=2",
+  "previous": null,
+  "results": [
+   {
+    "id": 55,
+    "kind": "alert",
+    "severity": "warning",
+    "title": "Low stock: SKU-9821",
+    "body": "Walnut desk tray has 9 left.",
+    "execution": "c87d4052-cbf3-44ab-8094-039d2c6ecb80",
+    "created_at": "2026-10-27T22:49:22.080170Z"
+   },
+   {
+    "id": 52,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-4164",
+    "body": "Order total: 174.36 EUR",
+    "execution": "a8ae83ce-04ef-4362-940e-ff83021c3824",
+    "created_at": "2026-10-27T19:12:37.487237Z"
+   },
+   {
+    "id": 51,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-6974",
+    "body": "Order total: 434.01 EUR",
+    "execution": "b833fa54-395a-4daa-bb9b-1172aa82040c",
+    "created_at": "2026-10-27T16:13:27.054852Z"
+   },
+   {
+    "id": 45,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-8811",
+    "body": "Order total: 50.88 EUR",
+    "execution": "7fa5b476-bc79-44e6-a6a0-f1470b066d70",
+    "created_at": "2026-10-27T14:51:26.805385Z"
+   },
+   {
+    "id": 36,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-6155",
+    "body": "Order total: 323.22 EUR",
+    "execution": "d949cbd4-9483-49f7-9852-4b84b674718e",
+    "created_at": "2026-10-27T12:13:09.982163Z"
+   },
+   {
+    "id": 34,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-4814",
+    "body": "Order total: 197.96 EUR",
+    "execution": "4da75c9d-0980-4538-a26e-36ad3043b5f1",
+    "created_at": "2026-10-27T09:58:58.962649Z"
+   },
+   {
+    "id": 50,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-5291",
+    "body": "Order total: 362.26 EUR",
+    "execution": "92d34ce8-f1cd-4a42-add1-05bd48482448",
+    "created_at": "2026-10-27T01:35:38.738281Z"
+   },
+   {
+    "id": 60,
+    "kind": "notification",
+    "severity": "error",
+    "title": "Workflow failed: Hand orders to n8n for fulfilment",
+    "body": "Could not connect to the service. Is it running and reachable? (code connection_error, attempt 1).",
+    "execution": "e265769e-6911-417c-ba29-51c9a72f1c2a",
+    "created_at": "2026-10-27T00:21:13.441703Z"
+   },
+   {
+    "id": 44,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-4566",
+    "body": "Order total: 288.53 EUR",
+    "execution": "8caf24b2-faf0-426b-8579-d9c08f829fbc",
+    "created_at": "2026-10-26T15:52:53.892507Z"
+   },
+   {
+    "id": 42,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-7570",
+    "body": "Order total: 99.91 EUR",
+    "execution": "1a862f0d-99a5-47f6-ba0b-c015114f3184",
+    "created_at": "2026-10-26T11:57:38.844713Z"
+   },
+   {
+    "id": 46,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-3144",
+    "body": "Order total: 233.04 EUR",
+    "execution": "1a9a4447-28bd-456a-aa7c-4886280e3496",
+    "created_at": "2026-10-26T03:26:01.753174Z"
+   },
+   {
+    "id": 35,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-4432",
+    "body": "Order total: 344.33 EUR",
+    "execution": "b85329e7-3495-4d56-a80c-697fdad2e26e",
+    "created_at": "2026-10-25T10:14:35.142693Z"
+   },
+   {
+    "id": 57,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-6279",
+    "body": "Order total: 226.01 EUR",
+    "execution": "8ba0804f-d3dc-4c10-8082-94153f3cb54a",
+    "created_at": "2026-10-25T00:25:38.043581Z"
+   },
+   {
+    "id": 41,
+    "kind": "notification",
+    "severity": "error",
+    "title": "Workflow failed: Welcome email for new customers",
+    "body": "The mail server did not answer within 10 seconds. (code smtp_timeout, attempt 1).",
+    "execution": "ab92a42e-da6b-437b-a12e-cf640941ebfd",
+    "created_at": "2026-10-25T00:14:15.414476Z"
+   },
+   {
+    "id": 61,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-2020",
+    "body": "Order total: 403.97 EUR",
+    "execution": "b25d6389-0781-4d5a-89b4-fa765e7f51f6",
+    "created_at": "2026-10-24T18:30:10.406576Z"
+   },
+   {
+    "id": 40,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-2982",
+    "body": "Order total: 127.24 EUR",
+    "execution": "36fa3010-19e2-412b-b690-0ad428f4543d",
+    "created_at": "2026-10-24T10:00:40.960512Z"
+   },
+   {
+    "id": 39,
+    "kind": "alert",
+    "severity": "warning",
+    "title": "Low stock: SKU-1009",
+    "body": "Enamel camp mug has 2 left.",
+    "execution": "5acfd2b8-bdb0-49ab-8687-8595e3104301",
+    "created_at": "2026-10-24T07:54:38.528919Z"
+   },
+   {
+    "id": 54,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-5349",
+    "body": "Order total: 74.32 EUR",
+    "execution": "bc90c353-975b-4854-a9cc-11d8df603cbc",
+    "created_at": "2026-10-23T23:39:06.818255Z"
+   },
+   {
+    "id": 48,
+    "kind": "notification",
+    "severity": "info",
+    "title": "New order ORD-6617",
+    "body": "Order total: 337.81 EUR",
+    "execution": "ad1f7b16-39e1-4c4f-8ce9-d927da122a95",
+    "created_at": "2026-10-23T19:40:00.561441Z"
+   },
+   {
+    "id": 33,
+    "kind": "alert",
+    "severity": "warning",
+    "title": "Low stock: SKU-6925",
+    "body": "Ceramic pour-over set has 2 left.",
+    "execution": "1aefc000-4f22-4ef6-b695-97c67665ca07",
+    "created_at": "2026-10-23T17:24:58.316032Z"
+   }
+  ]
+ },
+ "/assignments/": {
+  "count": 12,
+  "next": null,
+  "previous": null,
+  "results": [
+   {
+    "id": 17,
+    "ticket_id": "TCK-8962",
+    "subject": "Invoice copy request",
+    "priority": "low",
+    "category": "billing",
+    "assignee": "billing-desk",
+    "team": "Billing",
+    "matched_rule": "Rule 2: Billing questions go to finance support",
+    "execution": "11af8369-4858-46e0-a683-f71522c94fa7",
+    "created_at": "2026-10-27T09:01:09.907199Z"
+   },
+   {
+    "id": 13,
+    "ticket_id": "TCK-7912",
+    "subject": "Cannot reset my password",
+    "priority": "normal",
+    "category": "account",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "57bfeba2-6e9f-4d88-a036-41292f6bf923",
+    "created_at": "2026-10-27T08:48:29.167568Z"
+   },
+   {
+    "id": 21,
+    "ticket_id": "TCK-8541",
+    "subject": "Parcel arrived damaged",
+    "priority": "normal",
+    "category": "shipping",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "fc75e2df-727e-447b-bf24-8298a1f4fc47",
+    "created_at": "2026-10-26T10:31:57.874879Z"
+   },
+   {
+    "id": 15,
+    "ticket_id": "TCK-2519",
+    "subject": "Cannot reset my password",
+    "priority": "normal",
+    "category": "account",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "ebc78a7a-1bf5-470d-8925-102b0a45685a",
+    "created_at": "2026-10-25T15:45:52.930692Z"
+   },
+   {
+    "id": 24,
+    "ticket_id": "TCK-8251",
+    "subject": "Invoice copy request",
+    "priority": "low",
+    "category": "billing",
+    "assignee": "billing-desk",
+    "team": "Billing",
+    "matched_rule": "Rule 2: Billing questions go to finance support",
+    "execution": "8c404c4b-4a26-442c-9dda-9a202e2fbab0",
+    "created_at": "2026-10-23T21:12:30.546108Z"
+   },
+   {
+    "id": 23,
+    "ticket_id": "TCK-5930",
+    "subject": "Invoice copy request",
+    "priority": "low",
+    "category": "billing",
+    "assignee": "billing-desk",
+    "team": "Billing",
+    "matched_rule": "Rule 2: Billing questions go to finance support",
+    "execution": "7e9f023e-594f-4206-a692-f88ed45adc03",
+    "created_at": "2026-10-23T17:54:36.698414Z"
+   },
+   {
+    "id": 22,
+    "ticket_id": "TCK-3041",
+    "subject": "Invoice copy request",
+    "priority": "low",
+    "category": "billing",
+    "assignee": "billing-desk",
+    "team": "Billing",
+    "matched_rule": "Rule 2: Billing questions go to finance support",
+    "execution": "c25a8eb7-8991-4b18-8f64-5ea80251e61c",
+    "created_at": "2026-10-23T16:39:14.748448Z"
+   },
+   {
+    "id": 14,
+    "ticket_id": "TCK-3615",
+    "subject": "Parcel arrived damaged",
+    "priority": "normal",
+    "category": "shipping",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "d666a9b8-4fa0-424e-961e-dd73cbe6991f",
+    "created_at": "2026-10-22T18:21:10.494109Z"
+   },
+   {
+    "id": 20,
+    "ticket_id": "TCK-5371",
+    "subject": "Cannot reset my password",
+    "priority": "normal",
+    "category": "account",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "687c114b-d870-4005-9e10-21ddf08a8ca7",
+    "created_at": "2026-10-22T09:48:49.170750Z"
+   },
+   {
+    "id": 16,
+    "ticket_id": "TCK-6038",
+    "subject": "Cannot reset my password",
+    "priority": "normal",
+    "category": "account",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "12b69773-b9e6-454e-b176-5f49287cb25e",
+    "created_at": "2026-10-22T06:22:30.119374Z"
+   },
+   {
+    "id": 18,
+    "ticket_id": "TCK-2160",
+    "subject": "Parcel arrived damaged",
+    "priority": "normal",
+    "category": "shipping",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "017ccdaf-3937-416a-9c8c-8270c31e0607",
+    "created_at": "2026-10-22T01:46:36.430985Z"
+   },
+   {
+    "id": 19,
+    "ticket_id": "TCK-5002",
+    "subject": "Parcel arrived damaged",
+    "priority": "normal",
+    "category": "shipping",
+    "assignee": "support-queue",
+    "team": "General support",
+    "matched_rule": "Default assignment (no rule matched)",
+    "execution": "6e199b71-e889-42a0-a823-ae9b962ba0e6",
+    "created_at": "2026-10-21T22:17:12.393716Z"
+   }
+  ]
+ },
+ "/demo/scenarios/": [
+  {
+   "key": "new-customer",
+   "title": "Register a new customer",
+   "event": "customer.registered",
+   "explain": "A signup event arrives and the welcome-email workflow reacts.",
+   "expect": "A welcome email appears in the demo mailbox. No real email is sent."
+  },
+  {
+   "key": "new-order",
+   "title": "Place an order",
+   "event": "order.created",
+   "explain": "One order event fans out to two workflows: an internal notification and an n8n hand-off.",
+   "expect": "A team notification appears, and the n8n adapter records a simulated call."
+  },
+  {
+   "key": "low-stock",
+   "title": "Stock drops below the reorder level",
+   "event": "inventory.updated",
+   "explain": "The rule compares quantity with reorder_level.",
+   "expect": "A low-stock alert is created."
+  },
+  {
+   "key": "stock-ok",
+   "title": "Stock update that needs no action",
+   "event": "inventory.updated",
+   "explain": "Quantity is above the reorder level, so the condition does not match.",
+   "expect": "The execution is marked Skipped, with the reason in its log. No alert is created."
+  },
+  {
+   "key": "support-urgent",
+   "title": "Urgent support request",
+   "event": "support.request.created",
+   "explain": "Routing rules are checked in order and the first match wins.",
+   "expect": "The ticket is assigned to Escalations (rule 1)."
+  },
+  {
+   "key": "support-billing",
+   "title": "Billing support request",
+   "event": "support.request.created",
+   "explain": "Not urgent, so rule 1 is skipped and the billing rule matches.",
+   "expect": "The ticket is assigned to the Billing team (rule 2)."
+  },
+  {
+   "key": "bounced-email",
+   "title": "Welcome email that bounces",
+   "event": "customer.registered",
+   "explain": "The simulated mail server permanently rejects bounce.example.com addresses.",
+   "expect": "The execution fails with a clear message and an error notification is created automatically."
+  },
+  {
+   "key": "flaky-email",
+   "title": "Welcome email with a temporary failure",
+   "event": "customer.registered",
+   "explain": "The simulated mail server times out on the first attempt only.",
+   "expect": "The first attempt fails. Open it in Executions and press Retry: attempt 2 succeeds."
+  },
+  {
+   "key": "duplicate-event",
+   "title": "The same event delivered twice",
+   "event": "order.created",
+   "explain": "Senders often deliver webhooks more than once. Both deliveries carry the same event ID.",
+   "expect": "The second delivery is recognised as a duplicate and creates no new executions."
+  }
+ ],
+ "failedExecution": {
+  "id": "e265769e-6911-417c-ba29-51c9a72f1c2a",
+  "workflow": "6d4fe3fc-c4c3-41f1-b210-58e56b660ad4",
+  "workflow_name": "Hand orders to n8n for fulfilment",
+  "event_type": "order.created",
+  "status": "failed",
+  "source": "webhook",
+  "attempt": 1,
+  "input_summary": "Order ORD-4788, total 340.75 EUR",
+  "error_code": "connection_error",
+  "error_message": "Could not connect to the service. Is it running and reachable?",
+  "retryable": true,
+  "created_at": "2026-10-27T00:21:07.441703Z",
+  "started_at": "2026-10-27T00:21:07.441703Z",
+  "finished_at": "2026-10-27T00:21:12.649703Z",
+  "duration_ms": 5208,
+  "root_id": "e265769e-6911-417c-ba29-51c9a72f1c2a",
+  "workflow_version": 1,
+  "idempotency_key": "seed-70",
+  "payload": {
+   "order_id": "ORD-4788",
+   "total": 340.75,
+   "currency": "EUR"
+  },
+  "result": {},
+  "logs": [
+   {
+    "id": 291,
+    "level": "info",
+    "step": "start",
+    "message": "Started attempt 1 of 'Hand orders to n8n for fulfilment'.",
+    "created_at": "2026-10-27T00:21:07.441703Z"
+   },
+   {
+    "id": 292,
+    "level": "error",
+    "step": "finish",
+    "message": "Failed: Could not connect to the service. Is it running and reachable?",
+    "created_at": "2026-10-27T00:21:07.441703Z"
+   }
+  ],
+  "retry_of": null,
+  "retried_by": null,
+  "can_retry": true,
+  "retry_blocked_reason": null
+ }
+}

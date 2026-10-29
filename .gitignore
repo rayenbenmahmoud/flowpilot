@@ -1,0 +1,28 @@
+# secrets and local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+db.sqlite3
+staticfiles/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# node
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# editors / os
+.idea/
+.vscode/
+.DS_Store

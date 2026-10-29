@@ -1,0 +1,34 @@
+{
+  "name": "FlowPilot order receiver (example)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "flowpilot-order",
+        "authentication": "headerAuth",
+        "responseMode": "onReceived"
+      },
+      "name": "FlowPilot webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "flowpilot-order"
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            { "name": "summary", "value": "=Order {{ $json.body.order_id }} for {{ $json.body.total }}" }
+          ]
+        }
+      },
+      "name": "Build summary",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 1,
+      "position": [260, 0]
+    }
+  ],
+  "connections": { "FlowPilot webhook": { "main": [[{ "node": "Build summary", "type": "main", "index": 0 }]] } },
+  "settings": {},
+  "meta": { "note": "Import in n8n, create a Header Auth credential with name X-FlowPilot-Secret and the same value as FLOWPILOT_N8N_WEBHOOK_SECRET, attach it to the webhook node, then activate the workflow. Node type versions may differ in your n8n release; adjust if the import warns." }
+}
