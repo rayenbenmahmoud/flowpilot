@@ -10,6 +10,14 @@ Built with Django REST Framework, React + TypeScript, Celery, PostgreSQL and n8n
 
 > **Demo mode is on by default.** Email, n8n and partner APIs are simulated, so everything runs on a laptop with no accounts, API keys or paid services. A banner in the UI shows the mode on every screen.
 
+## 🚀 Live Demo
+
+**Try FlowPilot online:** [rayenbenmahmoud-flowpilot.duckdns.org](https://rayenbenmahmoud-flowpilot.duckdns.org)
+
+Explore the dashboard, run workflow automation scenarios, and test execution monitoring, retries, and duplicate-event protection.
+
+> **Demo mode:** External integrations are simulated. No API keys or external accounts are required.
+
 ## Features
 
 - **Workflow engine:** an event triggers rules (all/any conditions) and ordered actions, configured as validated data with a small, code-free template language (`{{ payload.total }}`, `{{ payload.currency | default:EUR }}`).
